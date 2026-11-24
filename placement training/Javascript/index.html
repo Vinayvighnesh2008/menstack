@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PIRAMU</title>
+
+    <script>
+
+        var age = 18;
+        console.log("Age:", age);
+
+        let course = "IT";
+        course = "dsa";
+        console.log("Course:", course);
+
+        const college = "PANIMALAR COLLEGE";
+        console.log("College:", college);
+
+        let a = 20;
+        let b = 10;
+        console.log("Add:", a + b);
+
+        function display(callback) {
+            callback();
+        }
+
+        function welcome() {
+            console.log("Welcome");
+        }
+
+        display(welcome);
+
+
+        function whatsapp(callback) {
+            callback();
+        }
+
+        function notification() {
+            console.log("WhatsApp Notification Received");
+        }
+
+        whatsapp(notification);
+
+        let fetch_api = new Promise((resolve, reject) => {
+
+            let api = false;
+
+            setTimeout(() => {
+
+                if (api) {
+                    resolve("Fetched API data");
+                } else {
+                    reject("Failed to fetch API data");
+                }
+
+            }, 2000);
+
+        });
+
+        fetch_api
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>PIRAMU </h1>
+
+</body>
+
+</html>
